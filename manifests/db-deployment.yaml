@@ -34,3 +34,6 @@ spec:
   clusterIP: None
   selector:
      app: swiggy
+     ports:
+     - ports: 3306
+       targetPort: 3306
