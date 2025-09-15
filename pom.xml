@@ -203,4 +203,11 @@
 		
         </plugins>
     </build>
+	<distributionManagement>
+    <repository>
+      <id>myrepo</id>
+      <url>http://98.88.108.164:8081/repository/myrepo/</url>
+    </repository>
+  </distributionManagement>
+</project>
 </project>
