@@ -11,7 +11,7 @@ spec:
     metadata:
       labels:
         app: db
-        spec:
+    spec:
       containers:
        - name: cont-1
          image: appalashetty/sravani:dbimage
