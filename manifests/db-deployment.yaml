@@ -29,7 +29,7 @@ spec:
 apiversion: v1
 kind: Service
 metadata:
-  name: mysvc
+  name: dbsvc
 spec:
   clusterIP: None
   selector:
