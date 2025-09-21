@@ -2,9 +2,8 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: devopsdb
+  name: devopsapp
 spec:
-  serviceName: devopsdb
   replicas: 2
   selector:
     matchLabels:
@@ -15,10 +14,10 @@ spec:
         app: db
     spec:
       containers:
-      - name: cont-1
-        image: appalashetty/sravani:dbimage
-        ports:
-        - containerPort: 3306
+          - name: cont-1
+            image: appalashetty/sravani:dbimage
+            ports:
+              - containerPort: 3306
       imagePullSecrets:
       - name: flm
 
