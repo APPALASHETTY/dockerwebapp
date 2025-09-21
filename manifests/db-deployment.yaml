@@ -6,7 +6,8 @@ metadata:
 spec:
   replicas: 2
   selector:
-    app: db
+    matchLabels:
+      app: db
   template:
     metadata:
       labels:
@@ -29,11 +30,11 @@ spec:
 apiversion: v1
 kind: Service
 metadata:
-  name: dbsvc
+  name: devopsdb
 spec:
   clusterIP: None
   selector:
-     app: swiggy
+     app: db
      ports:
      - ports: 3306
        targetPort: 3306
