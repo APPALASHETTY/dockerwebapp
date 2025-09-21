@@ -68,7 +68,7 @@
         <!-- 🔹 CSRF Token -->
         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 
-        <h2 class="form-signin-heading" align="center">SIGN UP</h2>
+        <h2 class="form-signin-heading text-center">SIGN UP</h2>
         <img class="logo" src="${contextPath}/resources/Images/devopslogo3.png" />
 
         <spring:bind path="username">
@@ -107,4 +107,3 @@
 <script src="${contextPath}/resources/js/bootstrap.min.js"></script>
 </body>
 </html>
-
