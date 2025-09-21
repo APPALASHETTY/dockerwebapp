@@ -15,10 +15,10 @@ spec:
         app: swiggy
     spec:
       containers:
-      - name: cont-1
-        image: appalashetty/sravani:appimage
-        ports:
-        - containerPort: 8080
+         - name: cont-1
+           image: appalashetty/sravani:appimage
+           ports:
+             - containerPort: 8080
       imagePullSecrets:
       - name: flm
 
